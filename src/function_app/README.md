@@ -16,6 +16,14 @@ It exposes two HTTP GET APIs:
 5. Start Functions host:
    - `func start`
 
+## Unit Tests
+1. Install runtime and test dependencies:
+   - `pip install -r requirements.txt -r requirements-dev.txt`
+2. Run tests from the repository root:
+   - `pytest tests -q`
+
+This command is suitable for future GitHub Actions CI execution.
+
 ## Response Format
 - Success: JSON with `operation`, `a`, `b`, `result`
 - Error: JSON with `error`
