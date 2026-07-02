@@ -7,7 +7,7 @@ def divide(a: float, b: float) -> float:
 
 
 def normalize_number(value: float):
-    # Keep response values compact for browser readability (e.g., 5 instead of 5.0).
+    #引数がfloat型であり、小数点以下が0の場合はint型に変換する
     if isinstance(value, float) and value.is_integer():
         return int(value)
     return value
