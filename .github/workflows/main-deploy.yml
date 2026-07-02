@@ -69,4 +69,5 @@ jobs:
         with:
           app-name: calc-api-matakaha
           package: src/function_app
+          sku: flexconsumption
           publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
